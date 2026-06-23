@@ -1,1 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Our Date ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+</head>
+
+<body>
+
+<div id="hearts-container"></div>
+
+<button id="musicBtn">🎵 Music</button>
+
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+    <!-- Intro Page -->
+    <section id="introPage" class="page active">
+
+        <div class="glass">
+
+            <h1 id="typewriter"></h1>
+
+            <p class="smallText">
+                I made something special for you ❤️
+            </p>
+
+            <button id="startBtn">
+                Open ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Question -->
+    <section id="questionPage" class="page">
+
+        <div class="glass">
+
+            <h1>
+                Will You Go On A Date With Me? ❤️
+            </h1>
+
+            <p>
+                Choose wisely 😌
+            </p>
+
+            <div class="btnRow">
+
+                <button id="yesBtn" class="mainBtn">
+                    YES ❤️
+                </button>
+
+                <button id="noBtn" class="secondaryBtn">
+                    NO 😒
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Date Type -->
+    <section id="dateTypePage" class="page">
+
+        <div class="glass">
+
+            <h1>Choose Our Date 💕</h1>
+
+            <div class="cardGrid">
+
+                <div class="card optionCard" data-type="Airbnb">
+                    🏡
+                    <span>Airbnb</span>
+                </div>
+
+                <div class="card optionCard" data-type="Clubbing">
+                    🎵
+                    <span>Clubbing</span>
+                </div>
+
+                <div class="card optionCard" data-type="Cute Cafe">
+                    ☕
+                    <span>Cute Cafe</span>
+                </div>
+
+                <div class="card optionCard" data-type="Gaming">
+                    🎮
+                    <span>Gaming</span>
+                </div>
+
+                <div class="card optionCard" data-type="All Of Them">
+                    🌟
+                    <span>All Of Them</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Sub Options -->
+    <section id="subPage" class="page">
+
+        <div class="glass">
+
+            <h1 id="subTitle"></h1>
+
+            <div id="subOptions" class="cardGrid"></div>
+
+            <textarea
+            id="dreamDateBox"
+            placeholder="Tell me your dream date ❤️"></textarea>
+
+            <button id="allNextBtn">
+                Next ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Date -->
+    <section id="datePage" class="page">
+
+        <div class="glass">
+
+            <h1>Pick A Date 📅</h1>
+
+            <input type="date" id="datePicker">
+
+            <button id="dateNextBtn">
+                Continue ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Time -->
+    <section id="timePage" class="page">
+
+        <div class="glass">
+
+            <h1>Choose Time ⏰</h1>
+
+            <div class="cardGrid">
+
+                <button class="timeBtn">10:00 AM</button>
+                <button class="timeBtn">12:00 PM</button>
+                <button class="timeBtn">2:00 PM</button>
+                <button class="timeBtn">4:00 PM</button>
+                <button class="timeBtn">6:00 PM</button>
+                <button class="timeBtn">8:00 PM</button>
+                <button class="timeBtn">10:00 PM</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Note -->
+    <section id="notePage" class="page">
+
+        <div class="glass">
+
+            <h1>Anything You'd Like To Tell Me? 💌</h1>
+
+            <textarea
+            id="specialNote"
+            placeholder="Write something sweet ❤️"></textarea>
+
+            <button id="finishBtn">
+                Finish ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Final -->
+    <section id="finalPage" class="page">
+
+        <div class="glass finalGlass">
+
+            <div class="bigHeart">
+                ❤️
+            </div>
+
+            <h1>
+                DATE CONFIRMED ❤️
+            </h1>
+
+            <div id="summary"></div>
+
+            <div id="countdown"></div>
+
+            <h2>
+                Love You ♾️💕
+            </h2>
+
+            <p>
+                I genuinely can't wait to spend time with you ❤️
+            </p>
+
+        </div>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
